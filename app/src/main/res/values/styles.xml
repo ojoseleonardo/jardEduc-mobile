@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--estilos de textos-->
+    <style name="center_title_pattern">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">33dp</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="center_title2_pattern">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="title2_pattern">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--estilos de textos-->
+
+    <style name="ContainerComponents">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">400dp</item>
+        <item name="android:background">@drawable/container_components</item>
+    </style>
+
+    <style name="edit_text_form_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_login</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColorHint">@color/dark_purple</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColorHintInverse">@color/dark_purple</item>
+
+    </style>
+
+    <style name="btn_form_login">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/btn_form_login</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="btn_form_cadastro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/btn_form_cadastro</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="edit_text_form_cadastro">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text_cadastro</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColorHint">@color/dark_purple</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textColorHintInverse">@color/dark_purple</item>
+    </style>
+
+
+</resources>

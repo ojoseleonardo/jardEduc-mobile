@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".CadastroForm">
+
+
+    <!--    titulo da tela-->
+    <TextView
+        android:id="@+id/tudo_comeca_aqui"
+        style="@style/center_title_pattern"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_form_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    logo principal-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/panda"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tudo_comeca_aqui" />
+
+    <!--    form de cadastro-->
+    <!--    <View-->
+    <!--        android:id="@+id/view_form"-->
+    <!--        style="@style/ContainerComponents"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/logo" />-->
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_components"
+        android:backgroundTint="@color/bege"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--    titulo do form de cadastro -->
+        <TextView
+            android:id="@+id/faca_seu_cadastro"
+            style="@style/center_title_pattern"
+            android:text="@string/title2_form_cadastro"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--    container_icons-->
+
+
+        <!--    container_inputs-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    style="@style/edit_text_form_cadastro"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_senha1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_baseline_remove_red_eye_24"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/dark_purple">
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    style="@style/edit_text_form_cadastro"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_senha2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleDrawable="@drawable/ic_baseline_remove_red_eye_24"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/dark_purple">
+
+                <EditText
+                    android:id="@+id/edit_password2"
+                    style="@style/edit_text_form_cadastro"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:hint="@string/hint_confirm_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_purple"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cadastro"
+                style="@style/btn_form_cadastro"
+                android:layout_marginTop="20dp"
+                android:text="@string/btn_cadastro" />
+
+            <TextView
+                android:id="@+id/text_login"
+                style="@style/title2_pattern"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/montserrat_mediumitalic"
+                android:text="@string/text_login" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

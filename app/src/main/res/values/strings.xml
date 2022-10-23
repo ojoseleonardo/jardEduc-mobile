@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">JarEduc</string>
+    <string name="title_form_login">Entre No Seu Jardim!</string>
+    <string name="title2_form_login">Faça Seu Login</string>
+    <string name="phrase_login_icons">Ou Você Pode Entrar no Seu Jardim Usando:</string>
+    <string name="forgot_password">Esqueceu a Senha?</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="text_cadastro">Não tem uma Conta? Cadastre-se já!</string>
+    <string name="title_forgot_password">Esqueceu a Senha?</string>
+    <string name="text_vamos_la">Vamos Lá!</string>
+    <string name="btn_recuperar">Enviar Link de Recuperação</string>
+    <string name="splash_screen_title">Jardim da Educação</string>
+    <string name="title_form_cadastro">Tudo Começa Aqui!</string>
+    <string name="title2_form_cadastro">Faça Seu Cadastro</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_confirm_password">Confirmar Senha</string>
+    <string name="text_login">Já tem uma Conta? Faça o Login!</string>
+    <string name="btn_cadastro">Continuar</string>
 </resources>
