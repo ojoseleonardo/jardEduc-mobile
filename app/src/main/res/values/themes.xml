@@ -4,15 +4,16 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple</item>
         <item name="colorPrimaryVariant">@color/purple</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/purple</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/dark_purple</item>
         <item name="colorSecondaryVariant">@color/dark_purple</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/purple</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/dark_purple</item>
+        <!-- para não dar clarão na troca de fragment, colocar a mesma cor da tela de fundo dos fragments -->
+        <item name="android:windowBackground">@color/white</item>
         <!-- Customize your theme here. -->
-
         <item name="android:navigationBarColor">@color/dark_purple</item>
     </style>
 </resources>
