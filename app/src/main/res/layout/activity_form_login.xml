@@ -117,7 +117,7 @@
                 <EditText
                     android:id="@+id/edit_email"
                     style="@style/edit_text_form_login"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
                     android:hint="E-mail"
                     android:inputType="textEmailAddress"
                     android:singleLine="true"

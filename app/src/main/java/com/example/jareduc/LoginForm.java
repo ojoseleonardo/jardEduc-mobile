@@ -1,6 +1,7 @@
 package com.example.jareduc;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,6 +31,16 @@ public class LoginForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(LoginForm.this, CadastroForm.class);
+                startActivity(it);
+                finish();
+            }
+        });
+
+        androidx.appcompat.widget.AppCompatButton btn_login = (AppCompatButton) findViewById(R.id.btn_login);
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent(LoginForm.this, MainActivity.class);
                 startActivity(it);
                 finish();
             }

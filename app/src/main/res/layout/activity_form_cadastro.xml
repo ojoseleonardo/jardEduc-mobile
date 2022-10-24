@@ -80,10 +80,11 @@
                 <EditText
                     android:id="@+id/edit_email"
                     style="@style/edit_text_form_cadastro"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
                     android:hint="E-mail"
                     android:inputType="textEmailAddress"
                     android:singleLine="true"
+
                     android:textColor="@color/dark_purple"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
