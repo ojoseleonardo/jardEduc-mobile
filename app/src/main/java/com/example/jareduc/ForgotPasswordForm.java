@@ -24,5 +24,10 @@ public class ForgotPasswordForm extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void finish(){
+        super.finish();
+        overridePendingTransition(R.anim.fade_out, R.anim.fade_out);
+    }
     }
 

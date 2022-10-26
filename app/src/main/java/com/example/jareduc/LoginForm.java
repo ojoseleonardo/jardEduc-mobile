@@ -2,6 +2,8 @@ package com.example.jareduc;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,7 +24,8 @@ public class LoginForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(LoginForm.this, ForgotPasswordForm.class);
-                startActivity(it);
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.fade_out);
+                ActivityCompat.startActivity(LoginForm.this, it, activityOptionsCompat.toBundle());
             }
         });
 
@@ -31,8 +34,8 @@ public class LoginForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(LoginForm.this, CadastroForm.class);
-                startActivity(it);
-                finish();
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.fade_out);
+                ActivityCompat.startActivity(LoginForm.this, it, activityOptionsCompat.toBundle());
             }
         });
 
@@ -45,5 +48,10 @@ public class LoginForm extends AppCompatActivity {
                 finish();
             }
         });
+    }
+    @Override
+    public void finish(){
+        super.finish();
+        overridePendingTransition(R.anim.fade_out, R.anim.fade_out);
     }
 }

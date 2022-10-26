@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 
 public class CadastroForm extends AppCompatActivity {
 
@@ -27,11 +29,15 @@ public class CadastroForm extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(CadastroForm.this, LoginForm.class);
-                startActivity(it);
-                finish();
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.fade_out);
+                ActivityCompat.startActivity(CadastroForm.this, it, activityOptionsCompat.toBundle());
             }
         });
+    }
 
-
+    @Override
+    public void finish(){
+        super.finish();
+        overridePendingTransition(R.anim.fade_out, R.anim.fade_out);
     }
 }

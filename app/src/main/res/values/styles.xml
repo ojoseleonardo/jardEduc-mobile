@@ -81,5 +81,10 @@
         <item name="android:textColorHintInverse">@color/dark_purple</item>
     </style>
 
+    <style name="step_cadastro_title">
+        <item name="fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">60dp</item>
+    </style>
+
 
 </resources>

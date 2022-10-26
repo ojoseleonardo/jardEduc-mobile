@@ -1,6 +1,7 @@
 package com.example.jareduc;
 
 import android.app.ActionBar;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -10,6 +11,8 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.content.ContextCompat;
 
 import java.util.Timer;
@@ -43,13 +46,17 @@ public class SplashScreen extends AppCompatActivity {
                 });
             }
         };
-        timer.schedule(timerTask, 5000);
+        timer.schedule(timerTask, 10000);
     }
 
     private void tempoSplash() {
         Intent it = new Intent(getApplicationContext(), LoginForm.class);
-        it.setFlags(it.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(it);
+//        it.setFlags(it.FLAG_ACTIVITY_NEW_TASK);
+//        Bundle  b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        // animação entre activitys
+         ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.fade_out);
+         ActivityCompat.startActivity(SplashScreen.this, it, activityOptionsCompat.toBundle());
+//        startActivity(it,b);
         finish();
     }
 }

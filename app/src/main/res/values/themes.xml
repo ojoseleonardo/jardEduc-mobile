@@ -15,5 +15,11 @@
         <item name="android:windowBackground">@color/white</item>
         <!-- Customize your theme here. -->
         <item name="android:navigationBarColor">@color/dark_purple</item>
+
+<!--        &lt;!&ndash; habilitar transições &ndash;&gt;-->
+<!--        <item name="android:windowActivityTransitions">true</item>-->
+<!--        &lt;!&ndash; setar transições de saida e entrada &ndash;&gt;-->
+<!--        <item name="android:windowEnterTransition">@transition/trans_anim</item>-->
+<!--        <item name="android:windowExitTransition">@transition/trans_anim</item>-->
     </style>
 </resources>

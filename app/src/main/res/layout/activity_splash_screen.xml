@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/temqir"
+    android:background="@drawable/logozin"
     tools:context=".SplashScreen">
 
 
@@ -17,8 +17,8 @@
 <!--        <ImageView-->
 <!--            android:id="@+id/logo2"-->
 <!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/logovai" />-->
+<!--            android:layout_height="600dp"-->
+<!--            android:src="@drawable/temqir" />-->
 
 <!--        <TextView-->
 <!--            android:layout_width="match_parent"-->

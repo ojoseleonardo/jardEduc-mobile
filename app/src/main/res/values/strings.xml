@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">JarEduc</string>
+    <string name="app_name">Jardim Da Educação</string>
     <string name="title_form_login">Entre No Seu Jardim!</string>
     <string name="title2_form_login">Faça Seu Login</string>
     <string name="phrase_login_icons">Ou Você Pode Entrar no Seu Jardim Usando:</string>
     <string name="forgot_password">Esqueceu a Senha?</string>
-    <string name="btn_login">LOGIN</string>
+    <string name="btn_login">ENTRAR</string>
     <string name="text_cadastro">Não tem uma Conta? Cadastre-se já!</string>
     <string name="title_forgot_password">Esqueceu a Senha?</string>
     <string name="text_vamos_la">Vamos Lá!</string>
@@ -16,7 +16,9 @@
     <string name="hint_confirm_password">Confirmar Senha</string>
     <string name="text_login">Já tem uma Conta? Faça o Login!</string>
     <string name="btn_cadastro">Continuar</string>
-    <string name="text_recuperacao">Você vai receber um link para recuperação no seu E-mail, caso ele esteja cadastrado!</string>
+    <string name="text_recuperacao">Digite seu E-mail, que enviaremos um link para voltar à sua conta e criar uma nova senha!</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="passo1">Passo 1</string>
+    <string name="conteudo_passo1">Show!, você completou o principal, agora temos algumas perguntas para você</string>
 </resources>
